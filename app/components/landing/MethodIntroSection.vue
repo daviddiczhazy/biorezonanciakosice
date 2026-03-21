@@ -5,8 +5,13 @@ withDefaults(
     bullets: string[];
     ctaLabel: string;
     ctaTo: string;
+    imageSrc?: string;
+    imageAlt?: string;
   }>(),
-  {}
+  {
+    imageSrc: "/img/Biorezonancia-pr.jpg",
+    imageAlt: "Biorezonancia – zariadenie a pokojné prostredie konzultácie",
+  }
 );
 </script>
 
@@ -38,87 +43,21 @@ withDefaults(
         </div>
 
         <div class="relative">
-          <BaseCard class="p-6 sm:p-8 overflow-hidden">
+          <div
+            class="relative mx-auto aspect-square w-4/5 rounded-3xl sm:rounded-[2rem] border border-primary-light/20 shadow-soft overflow-hidden bg-primary-light/10"
+          >
+            <img
+              :src="imageSrc"
+              :alt="imageAlt"
+              class="absolute inset-0 block w-full h-full object-cover object-center"
+              loading="lazy"
+              decoding="async"
+            />
             <div
-              class="absolute -top-12 -right-12 w-56 h-56 rounded-full bg-primary-light/25 blur-2xl"
+              class="pointer-events-none absolute inset-0 bg-gradient-to-tr from-primary-light/15 via-transparent to-transparent"
               aria-hidden="true"
             />
-            <div class="relative">
-              <div class="text-sm font-semibold text-text/80">
-                Jemný wellness vizuál
-              </div>
-              <div
-                class="mt-4 rounded-3xl border border-primary-light/20 bg-white/45 p-6"
-              >
-                <div class="flex items-center gap-3">
-                  <div class="w-3 h-3 rounded-full bg-primary-dark/70" />
-                  <div class="w-3 h-3 rounded-full bg-primary-light/90" />
-                  <div class="w-3 h-3 rounded-full bg-primary-dark/50" />
-                </div>
-                <div class="mt-4 space-y-4">
-                  <div class="h-2 rounded-full bg-primary-light/25" />
-                  <div class="h-2 rounded-full bg-primary-light/35" />
-                  <div class="h-2 rounded-full bg-primary-light/20" />
-                </div>
-
-                <svg
-                  class="mt-6 w-full"
-                  viewBox="0 0 520 180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-                      <stop
-                        offset="0"
-                        stop-color="#4CC8B2"
-                        stop-opacity="0.45"
-                      />
-                      <stop
-                        offset="0.5"
-                        stop-color="#1F8F7B"
-                        stop-opacity="0.25"
-                      />
-                      <stop
-                        offset="1"
-                        stop-color="#BFEFE4"
-                        stop-opacity="0.35"
-                      />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    d="M0 95 C 60 50, 130 140, 190 95 S 320 50, 380 95 S 470 140, 520 95"
-                    stroke="url(#g)"
-                    stroke-width="6"
-                    fill="none"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M0 120 C 70 75, 130 155, 210 120 S 330 75, 400 120 S 480 155, 520 120"
-                    stroke="url(#g)"
-                    stroke-width="4"
-                    fill="none"
-                    stroke-linecap="round"
-                    opacity="0.7"
-                  />
-                  <circle
-                    cx="410"
-                    cy="64"
-                    r="10"
-                    fill="#4CC8B2"
-                    fill-opacity="0.25"
-                  />
-                  <circle
-                    cx="108"
-                    cy="146"
-                    r="8"
-                    fill="#BFEFE4"
-                    fill-opacity="0.5"
-                  />
-                </svg>
-              </div>
-            </div>
-          </BaseCard>
+          </div>
         </div>
       </div>
     </SectionContainer>
