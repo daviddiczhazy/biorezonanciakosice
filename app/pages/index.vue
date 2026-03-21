@@ -22,10 +22,26 @@ const processSteps = [
 ];
 
 const benefits = [
-  "Individuálny prístup",
-  "Pokojné a diskrétne prostredie",
-  "Priestor na otázky",
-  "Dôraz na komfort a zrozumiteľnosť",
+  {
+    title: "Individuálny prístup",
+    description:
+      "Každý človek je iný. Zohľadníme váš kontext a tempo — nič univerzálneho, riešenie prispôsobíme vašej situácii.",
+  },
+  {
+    title: "Pokojné a diskrétne prostredie",
+    description:
+      "Priestor bez zhonu, kde sa môžete uvoľniť. Čo povieme medzi štyrmi očami, ostane medzi nami.",
+  },
+  {
+    title: "Priestor na otázky",
+    description:
+      "Nič nie je hlúpa otázka. Vysvetlíme, čo robíme, prečo to dáva zmysel a čo môžete očakávať.",
+  },
+  {
+    title: "Dôraz na komfort a zrozumiteľnosť",
+    description:
+      "Bez zbytočnej odbornosti — jazykom, ktorému rozumiete. Ide o to, aby ste sa počas celého procesu cítili v pohode.",
+  },
 ];
 
 const faqItems = [
