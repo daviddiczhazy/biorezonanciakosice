@@ -27,18 +27,22 @@ const closeMobile = () => {
     >
       <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3">
         <div class="grid grid-cols-3 items-center gap-4">
-          <!-- Left: logo -->
-          <div
-            class="flex w-fit items-center justify-self-start border-2 border-gray-500 p-1 rounded-lg"
+          <!-- Left: text logo -->
+          <NuxtLink
+            to="/"
+            class="justify-self-start w-fit flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2.5 rounded-md antialiased transition-opacity duration-200 hover:opacity-[0.88] focus-visible:outline-none focus-visible:opacity-100 focus-visible:ring-2 focus-visible:ring-primary-light/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
-            <NuxtLink
-              to="/"
-              class="font-[Inter] font-bold tracking-wide text-lg sm:text-xl"
+            <span
+              class="text-base sm:text-lg font-bold uppercase tracking-[0.14em] text-primary leading-none"
             >
-              <span class="text-primary-dark">BIOREZONANCIA</span>
-              <span class="text-primary"> KOŠICE</span>
-            </NuxtLink>
-          </div>
+              Biorezonancia
+            </span>
+            <span
+              class="text-base sm:text-lg font-bold uppercase tracking-tight text-text/85 leading-none"
+            >
+              Košice
+            </span>
+          </NuxtLink>
 
           <!-- Center: navigation -->
           <nav
