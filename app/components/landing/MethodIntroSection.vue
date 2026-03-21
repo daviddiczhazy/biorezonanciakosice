@@ -9,7 +9,7 @@ withDefaults(
     imageAlt?: string;
   }>(),
   {
-    imageSrc: "/img/Biorezonancia-pr.jpg",
+    imageSrc: "/img/biorezonancia-pr.jpg",
     imageAlt: "Biorezonancia – zariadenie a pokojné prostredie konzultácie",
   }
 );
