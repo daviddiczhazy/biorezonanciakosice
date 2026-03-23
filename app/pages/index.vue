@@ -47,27 +47,31 @@ const benefits = [
 const faqItems = [
   {
     q: "Čo je biorezonancia?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
+    a: "Biorezonancia je neinvazívna metóda, ktorá je opisovaná ako práca s frekvenčnými vzormi organizmu a s individuálnym, celostným prístupom. Je prezentovaná ako doplnkový prístup, ktorý sa snaží podporiť prirodzenú rovnováhu organizmu.",
   },
   {
-    q: "Je sedenie bolestivé?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
-  },
-  {
-    q: "Ako dlho trvá jedno stretnutie?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
-  },
-  {
-    q: "Koľko stretnutí býva potrebných?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
-  },
-  {
-    q: "Je biorezonancia vhodná aj pre deti?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
+    q: "Na akom princípe funguje?",
+    a: "Referenčné materiály ju opisujú cez biofyzikálny princíp a prácu s elektromagnetickými frekvenčnými vzormi. Biorezonančný prístroj sleduje reakciu organizmu na určité frekvenčné podnety a podľa toho sa nastavuje ďalší postup.",
   },
   {
     q: "Ako prebieha prvá návšteva?",
-    a: "Doplňte odpoveď (upresníme pri konzultácii).",
+    a: "Prvá návšteva zvyčajne zahŕňa úvodný rozhovor, vysvetlenie priebehu, samotné sedenie a následné odporúčanie ďalšieho postupu. Dôležitou súčasťou je priestor na otázky a pokojné vysvetlenie celej metódy.",
+  },
+  {
+    q: "Je stretnutie bolestivé?",
+    a: "Biorezonancia sa bežne opisuje ako neinvazívny prístup. Samotné stretnutie býva vedené pokojne a bez invazívnych zásahov.",
+  },
+  {
+    q: "Ako dlho trvá jedno stretnutie?",
+    a: "Dĺžka stretnutia sa môže líšiť podľa konkrétneho postupu a vašej situácie. Presnejšie informácie je najlepšie dohodnúť pri objednaní konzultácie.",
+  },
+  {
+    q: "Je tento prístup vhodný pre každého?",
+    a: "Vhodnosť je vždy individuálna. Najlepšie je posúdiť ju osobne podľa vašej konkrétnej situácie, očakávaní a priebehu úvodnej konzultácie.",
+  },
+  {
+    q: "Existujú k biorezonancii aj štúdie?",
+    a: "Na referenčných stránkach sú uvedené viaceré odborné podklady a publikované materiály. Medzi nimi je napríklad aj pilotná štúdia o odvykaní od fajčenia, ktorá uvádza pozitívne výsledky a absenciu klinicky pozorovaných vedľajších účinkov počas sledovania.",
   },
 ];
 </script>

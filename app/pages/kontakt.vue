@@ -26,14 +26,14 @@
                 info@biorezonancia.sk
               </div>
               <div>
-                <span class="font-semibold text-text/90">Adresa:</span> Ulica
-                123, 000 00
+                <span class="font-semibold text-text/90">Adresa:</span>
+                Žriedlová 18, 040 01 Košice
               </div>
               <div>
                 <span class="font-semibold text-text/90"
                   >Konzultačné hodiny:</span
                 >
-                Po–Pi 9:00–17:00 (orientačne)
+                Po–Pi 9:00–17:00
               </div>
             </div>
 
