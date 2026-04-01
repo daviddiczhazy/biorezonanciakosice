@@ -8,49 +8,32 @@ useSeoMeta({
     "Zistite viac o biorezonancii, jej princípe, priebehu stretnutia a prístrojovom prístupe. Prehľadné informácie v zrozumiteľnej slovenčine.",
 });
 
-const forWhoBullets = [
-  "pre ľudí, ktorí majú záujem o neinvazívny prístup",
-  "pre tých, ktorí preferujú individuálnu konzultáciu",
-  "pre ľudí, ktorí chcú lepšie porozumieť reakciám svojho tela",
-  "pre tých, ktorí hľadajú doplnkový pohľad popri bežnej starostlivosti",
-  "pre ľudí, ktorým vyhovuje celostný a pokojný prístup",
-] as const;
-
-const faqItems = [
-  {
-    q: "Čo je biorezonancia?",
-    a: "Biorezonancia je neinvazívna metóda, ktorá je opisovaná ako práca s frekvenčnými vzormi organizmu a s individuálnym, celostným prístupom. Je prezentovaná ako doplnkový prístup, ktorý sa snaží podporiť prirodzenú rovnováhu organizmu.",
-  },
-  {
-    q: "Na akom princípe funguje?",
-    a: "Referenčné materiály ju opisujú cez biofyzikálny princíp a prácu s elektromagnetickými frekvenčnými vzormi. Biorezonančný prístroj sleduje reakciu organizmu na určité frekvenčné podnety a podľa toho sa nastavuje ďalší postup.",
-  },
-  {
-    q: "Ako prebieha prvá návšteva?",
-    a: "Prvá návšteva zvyčajne zahŕňa úvodný rozhovor, vysvetlenie priebehu, samotné sedenie a následné odporúčanie ďalšieho postupu. Dôležitou súčasťou je priestor na otázky a pokojné vysvetlenie celej metódy.",
-  },
-  {
-    q: "Je stretnutie bolestivé?",
-    a: "Biorezonancia sa bežne opisuje ako neinvazívny prístup. Samotné stretnutie býva vedené pokojne a bez invazívnych zásahov.",
-  },
-  {
-    q: "Ako dlho trvá jedno stretnutie?",
-    a: "Dĺžka stretnutia sa môže líšiť podľa konkrétneho postupu a vašej situácie. Presnejšie informácie je najlepšie dohodnúť pri objednaní konzultácie.",
-  },
-  {
-    q: "Je tento prístup vhodný pre každého?",
-    a: "Vhodnosť je vždy individuálna. Najlepšie je posúdiť ju osobne podľa vašej konkrétnej situácie, očakávaní a priebehu úvodnej konzultácie.",
-  },
-  {
-    q: "Existujú k biorezonancii aj štúdie?",
-    a: "Na referenčných stránkach sú uvedené viaceré odborné podklady a publikované materiály. Medzi nimi je napríklad aj pilotná štúdia o odvykaní od fajčenia, ktorá uvádza pozitívne výsledky a absenciu klinicky pozorovaných vedľajších účinkov počas sledovania.",
-  },
+/** Sekcia „Pre koho je biorezonancia“ — zoznam tém. */
+const biorezonanciaProblems = [
+  "Eliminácia geopatogénnych zón a elektrosmogu, ochrana pred radiačnou záťažou (mobilné telefóny, WiFi, 5G siete, röntgenové žiarenie)",
+  "Poruchy imunitného systému – oslabená imunita",
+  "Alergie",
+  "Únava, chronický únavový syndróm",
+  "Bolesti svalov, kĺbov, hlavy",
+  "Psychická nerovnováha, úzkosť, depresia, strachy",
+  "Stavy spojené s menopauzou, menštruačné problémy – bolestivá menštruácia, PMS",
+  "Hormonálne rozvrátenie, návaly tepla, studené končatiny",
+  "Poruchy metabolizmu – cukrovka, vysoký cholesterol, zvýšená hladina kyseliny močovej",
+  "Zaťaženie vnútorných orgánov – pečeň, žlčník, obličky, pankreas, žalúdok, pľúca, srdce, lymfa, črevá",
+  "Eliminácia patogénov – vírusov (vrátane herpetických, EBV), baktérií (vrátane borélií, mykoplazmy, chlamídií), kvasiniek, plesní, parazitov",
+  "Detoxikácia a harmonizácia organizmu",
+  "Prevencia a rekonvalescencia po chorobe, operáciách",
+  "Vyvedenie záťaží toxických metabolitov pre lepšiu znášanlivosť chemoterapie a rádioterapie",
+  "Závislosť na cigaretách, tabakových výrobkoch, alkohole, sladkostiach",
+  "Ochorenia zubov a ďasien",
+  "Chudnutie",
+  "Poúrazové stavy",
 ] as const;
 </script>
 
 <template>
   <div>
-    <!-- SEKCIA 1 — HERO -->
+    <!-- 1 — Hero / úvod -->
     <section class="relative overflow-hidden py-16 sm:py-20">
       <div
         class="pointer-events-none absolute inset-y-0 right-0 w-full max-w-xl bg-gradient-to-l from-primary/[0.08] to-transparent rounded-l-[3rem] sm:rounded-l-[4rem]"
@@ -58,7 +41,7 @@ const faqItems = [
       />
       <SectionContainer class="relative">
         <p
-          class="text-sm font-semibold tracking-wide text-primary-dark/85 uppercase"
+          class="text-base font-semibold tracking-wide text-primary-dark/85 uppercase"
         >
           Viac o metóde
         </p>
@@ -70,17 +53,26 @@ const faqItems = [
         <p
           class="mt-6 max-w-3xl text-lg sm:text-xl text-text/80 leading-relaxed"
         >
-          Biorezonancia je neinvazívna metóda s individuálnym a celostným
-          prístupom. Mnohí ľudia sa o ňu začnú zaujímať vo chvíli, keď hľadajú
-          jemnejší, doplnkový pohľad na svoj organizmus a chcú lepšie porozumieť
-          tomu, ako ich telo reaguje.
+          <strong class="font-semibold text-text"
+            >Biorezonancia je neinvazívna diagnostická a terapeutická
+            metóda</strong
+          >
+          — v praxi ju realizujeme pomocou prístroja
+          <strong class="font-semibold text-text"
+            >Bicom Optima 2. generácie</strong
+          >. Prístup je bezbolestný, bez použitia chemických liekov a s dôrazom
+          na harmonizáciu organizmu, detoxikáciu a podporu jeho prirodzených
+          samoregulačných mechanizmov. Podrobnejší opis princípu, prístroja aj
+          súvislostí s tradičnou čínskou medicínou nájdete v sekciách nižšie.
         </p>
-        <p class="mt-5 max-w-3xl text-base text-text/70 leading-relaxed">
-          Na tejto stránke nájdete prehľadné vysvetlenie toho, ako je
-          biorezonancia popisovaná, na akom princípe pracuje, ako môže vyzerať
-          prvé stretnutie a čo môžete od tejto metódy očakávať. Cieľom nie je
-          zahltiť vás zložitou teóriou, ale podať informácie pokojne,
-          zrozumiteľne a v širšom kontexte.
+        <p class="mt-5 max-w-3xl text-lg text-text/70 leading-relaxed">
+          Tu nájdete, ako biorezonancia funguje v princípe aj pri konzultácii,
+          čo môžete očakávať od
+          <strong class="font-semibold text-text/80">prvého stretnutia</strong>
+          a pri akých ťažkostiach s ňou
+          <strong class="font-semibold text-text/80">vieme pomôcť</strong>.
+          Vysvetľujeme to pokojne a zrozumiteľne — aj v širšom odbornom kontexte
+          — aby ste sa mohli rozhodnúť s prehľadom.
         </p>
         <div class="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">
           <BaseButton to="/kontakt" variant="primary" size="lg">
@@ -102,108 +94,42 @@ const faqItems = [
     <section class="py-14 sm:py-18 border-t border-primary-light/15">
       <SectionContainer>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
-          Čo je biorezonancia?
+          Čo je biorezonancia a ako pracuje biorezonančný prístroj?
         </h2>
         <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
+          class="mt-8 max-w-3xl space-y-5 text-lg text-text/75 leading-relaxed"
         >
           <p>
-            Biorezonancia je opisovaná ako neinvazívna metóda, ktorá pristupuje
-            k človeku komplexne. V odborných materiáloch býva zaraďovaná do
-            oblasti regulačnej a informačnej medicíny a prezentuje sa ako
-            doplnok ku klasickej medicíne. Referenčné texty ju vysvetľujú cez
-            spojenie troch rovín života — hmoty, energie a informácie — pričom
-            pri biorezonancii kladú najväčší dôraz práve na informačnú rovinu a
-            tok informácií v organizme.
+            Biorezonancia je neinvazívna, diagnostická a terapeutická metóda. Je
+            vykonávaná pomocou prístroja Bicom Optima 2. generácie. Základy
+            tejto terapie vychádzajú z poznatkov kvantovej fyziky t.j. faktu, že
+            všetky bunky v živom organizme spolu komunikujú za pomoci vysielania
+            elektromagnetických vĺn. Tieto vlnenia majú u človeka v harmonickom
+            stave inú štruktúru ako u človeka s telesnými alebo psychickými
+            záťažami.
           </p>
           <p>
-            Zjednodušene povedané, tento prístup pracuje s predstavou, že
-            organizmus reaguje nielen na hmotné podnety, ale aj na špecifické
-            elektromagnetické frekvenčné vzory. Biorezonancia sa preto snaží
-            sledovať a využívať tieto reakcie tak, aby podporila harmonickejšie
-            fungovanie organizmu a jeho prirodzenú regulačnú schopnosť.
+            Pokiaľ je komunikácia medzi bunkami narušená napr. patogénmi ako sú
+            vírusy, baktérie, kvasinky, parazity alebo chemickými látkami,
+            elektrosmogom, ťažkými kovmi, stresom, alergénmi dochádza k rozvoju
+            zdravotných problémov. Prístroj Bicom tieto elektromagnetické vlny
+            /frekvencie/ zachytí z tela klienta cez elektródy za pomoci
+            špecifických testovacích látok, ampúl alebo digitalizovaných
+            databáz. Následne ich spracuje, upraví a pošle späť do tela ako
+            „terapeutický signál“.
           </p>
           <p>
-            Pre bežného návštevníka je dôležité najmä to, že ide o jemný,
-            prístrojový a individuálne nastavovaný prístup. Nejde o invazívny
-            zákrok, ale o metódu, pri ktorej sa hľadí na človeka v širších
-            súvislostiach a nie iba cez jeden izolovaný problém.
+            Týmto postupom dochádza k detoxikácii organizmu, k harmonizácii, k
+            úprave samoregulačných mechanizmov organizmu a k celkovému
+            ozdraveniu tela. Prístroj je kombináciou moderných technológií s
+            prvkami tradičnej čínskej medicíny. Pre klienta je podstatné, že ide
+            o neinvazívnu, bezbolestnú metódu, bez použitia chemických liekov.
           </p>
         </div>
       </SectionContainer>
     </section>
 
-    <!-- SEKCIA 3 -->
-    <section
-      class="py-14 sm:py-18 bg-gradient-to-b from-primary/[0.04] to-transparent"
-    >
-      <SectionContainer>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
-          Ako sa biorezonancia popisuje
-        </h2>
-        <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
-        >
-          <p>
-            Podľa referenčných materiálov je základom biorezonancie práca s
-            elektromagnetickými interakciami a frekvenčnými vzormi, ktoré sú
-            spájané s biologickými procesmi v organizme. Tieto materiály
-            opisujú, že špecifické vlnové vzory môžu niesť určitú informáciu a
-            že biorezonančný prístroj s nimi dokáže pracovať, modulovať ich a
-            spätne ich využívať v prospech harmonizácie regulačných procesov.
-          </p>
-          <p>
-            V praxi sa tento prístup prezentuje ako snaha podporiť prirodzenú
-            sebareguláciu organizmu. V textoch sa opakovane objavuje myšlienka,
-            že cieľom je napomôcť obnove rovnováhy, plynulejšej komunikácie v
-            organizme a lepšiemu prístupu tela k vlastným regulačným
-            mechanizmom.
-          </p>
-          <p>
-            Zároveň sa biorezonancia opisuje ako vysoko individuálna metóda.
-            Dôraz sa kladie na to, že reakcia každého človeka môže byť odlišná a
-            že postup sa prispôsobuje konkrétnej situácii, aktuálnemu stavu a
-            tomu, ako organizmus reaguje na testované frekvenčné vzory.
-          </p>
-        </div>
-      </SectionContainer>
-    </section>
-
-    <!-- SEKCIA 4 -->
-    <section class="py-14 sm:py-18">
-      <SectionContainer>
-        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
-          Na akom princípe pracuje biorezonančný prístroj
-        </h2>
-        <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
-        >
-          <p>
-            Biorezonančný prístroj je v odborných podkladoch opisovaný ako
-            zariadenie, ktoré komunikuje s organizmom prostredníctvom
-            frekvenčných informácií. Pracuje s elektromagnetickými vzormi, ktoré
-            sú buď získavané priamo z pacienta, alebo sa využívajú zo
-            špecifických testovacích látok, ampúl či digitalizovaných databáz.
-          </p>
-          <p>
-            Pri niektorých postupoch sa používajú elektródy priložené na koncové
-            body energetických dráh. Referenčné materiály uvádzajú, že týmto
-            spôsobom je možné sledovať reakciu organizmu na konkrétne testované
-            podnety a vyhodnocovať, ktoré frekvenčné vzory s ním rezonujú. Ak sa
-            frekvenčné vzory zhodujú, hovorí sa o rezonancii, ktorá sa následne
-            využíva na nastavenie ďalšieho postupu.
-          </p>
-          <p>
-            Z pohľadu klienta je podstatné najmä to, že ide o prístrojový a
-            neinvazívny prístup. Na pozadí síce stojí pomerne komplexná teória,
-            no samotné stretnutie býva vedené pokojne, zrozumiteľne a s dôrazom
-            na individuálny priebeh.
-          </p>
-        </div>
-      </SectionContainer>
-    </section>
-
-    <!-- SEKCIA 5 -->
+    <!-- 3 — Prístroje a postupy (referenčný kontext) -->
     <section
       class="py-14 sm:py-18 border-t border-primary-light/15 bg-white/30"
     >
@@ -212,7 +138,7 @@ const faqItems = [
           Prístroje a používané postupy
         </h2>
         <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
+          class="mt-8 max-w-3xl space-y-5 text-lg text-text/75 leading-relaxed"
         >
           <p>
             Biorezonančná metóda je úzko spätá s používaním špecializovaných
@@ -243,71 +169,73 @@ const faqItems = [
     <section class="py-14 sm:py-18">
       <SectionContainer>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
-          Ako môže prebiehať prvé stretnutie
+          Ako prebieha prvé stretnutie
         </h2>
         <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
+          class="mt-8 max-w-3xl space-y-5 text-lg text-text/75 leading-relaxed"
         >
           <p>
-            Prvé stretnutie býva spravidla zamerané na úvodný rozhovor. Cieľom
-            je lepšie pochopiť vašu situáciu, zodpovedať základné otázky a
-            vysvetliť, ako samotné sedenie prebieha. Tento úvod je dôležitý
-            najmä preto, aby ste presne vedeli, čo môžete očakávať a cítili sa
-            počas celej návštevy komfortne.
+            <strong class="font-semibold text-text">Pri prvom stretnutí</strong>
+            sa porozprávame o Vašich zdravotných problémoch a súvislostiach,
+            ktoré by mohli Vaše zdravotné problémy vyvolávať, o prekonaných
+            infekciách, operáciách, stave chrupu a pod.
           </p>
           <p>
-            Nasleduje samotná práca s biorezonančným prístrojom. Presný priebeh
-            môže byť individuálny podľa zvoleného postupu, typu testovania a
-            toho, s čím človek prichádza. Vždy je však dôležité, aby bol celý
-            proces vedený pokojne, zrozumiteľne a s priestorom na otázky.
+            <strong class="font-semibold text-text">Ďalší postup:</strong>
           </p>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary text-text/75">
+            <li>Odblokovanie stresu a napätia, aby došlo k Vášmu uvoľneniu;</li>
+            <li>
+              Odstránenie blokád jazvami, elektrosmogom, geopatogénnymi zónami;
+            </li>
+            <li>Ďalším krokom je podpora detoxikačných orgánov;</li>
+            <li>
+              Testovanie, ktorý orgán, systém alebo dráha sú vo Vašom tele
+              energeticky oslabené;
+            </li>
+            <li>
+              Testovanie záťaží (vírusy, baktérie, kvasinky, parazity, alergény,
+              ťažké kovy atď.).
+            </li>
+          </ul>
           <p>
-            Na záver sa zvyčajne preberá ďalší postup. Môže ísť o odporúčanie
-            pokračovania, vysvetlenie ďalších krokov alebo jednoduché zhrnutie
-            toho, čo bolo počas stretnutia riešené. Pre mnohých ľudí je práve
-            táto zrozumiteľnosť a individuálny prístup jedným z dôvodov, prečo
-            ich biorezonancia osloví.
+            Na základe rozhovoru a testovania sa navrhne ďalší postup, odporučí
+            sa úprava stravovania.
           </p>
         </div>
       </SectionContainer>
     </section>
 
-    <!-- SEKCIA 7 -->
+    <!-- 5 — Pre koho (indikácie) -->
     <section
       class="py-14 sm:py-18 bg-gradient-to-b from-primary-light/12 to-transparent"
     >
       <SectionContainer>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
-          Pre koho môže byť biorezonancia zaujímavá
+          Pre koho je biorezonancia
         </h2>
-        <p class="mt-6 max-w-3xl text-base text-text/75 leading-relaxed">
-          Biorezonancia môže byť zaujímavá najmä pre ľudí, ktorí hľadajú jemný a
-          individuálny prístup a chcú sa na svoj organizmus pozrieť
-          komplexnejšie.
+        <p class="mt-6 max-w-3xl text-lg text-text/75 leading-relaxed">
+          <strong class="font-semibold text-text">Pomocou biorezonancie</strong>
+          pomáhame riešiť nasledujúce problémy:
         </p>
         <ul
-          class="mt-8 max-w-3xl space-y-3 text-base text-text/80 leading-relaxed list-disc pl-6 marker:text-primary"
+          class="mt-6 max-w-3xl space-y-2.5 text-lg text-text/80 leading-relaxed list-disc pl-6 marker:text-primary"
         >
-          <li v-for="item in forWhoBullets" :key="item">
+          <li v-for="item in biorezonanciaProblems" :key="item">
             {{ item }}
           </li>
         </ul>
-        <p class="mt-8 max-w-3xl text-base text-text/75 leading-relaxed">
-          Každý človek je však individuálny. Preto má najväčší zmysel posudzovať
-          vhodnosť tejto metódy osobne, podľa konkrétnej situácie, očakávaní a
-          priebehu úvodnej konzultácie.
-        </p>
       </SectionContainer>
     </section>
 
-    <!-- SEKCIA 8 -->
+    <!-- 6 — Štúdie a podklady -->
     <section class="py-14 sm:py-18 border-t border-primary-light/15">
       <SectionContainer>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
           Odborné podklady a dostupné štúdie
         </h2>
         <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
+          class="mt-8 max-w-3xl space-y-5 text-lg text-text/75 leading-relaxed"
         >
           <p>
             S biorezonanciou sa často spája aj otázka odborných podkladov,
@@ -336,14 +264,14 @@ const faqItems = [
       </SectionContainer>
     </section>
 
-    <!-- SEKCIA 9 -->
+    <!-- 7 — Prečo ľudia vyhľadávajú -->
     <section class="py-14 sm:py-18">
       <SectionContainer>
         <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-text">
           Prečo ľudia vyhľadávajú biorezonanciu
         </h2>
         <div
-          class="mt-8 max-w-3xl space-y-5 text-base text-text/75 leading-relaxed"
+          class="mt-8 max-w-3xl space-y-5 text-lg text-text/75 leading-relaxed"
         >
           <p>
             Ľudia sa o biorezonanciu zaujímajú z rôznych dôvodov. Niekto hľadá
@@ -368,6 +296,7 @@ const faqItems = [
 
     <!-- SEKCIA 10 -->
     <CtaSection
+      larger-subtitle
       title="Máte otázky alebo si chcete dohodnúť konzultáciu?"
       subtitle="Radi vám vysvetlíme priebeh prvého stretnutia, odpovieme na vaše otázky a pomôžeme vám zistiť, či je tento prístup vhodný práve pre vás. Ak hľadáte pokojný, individuálny a zrozumiteľný prístup, prvá konzultácia môže byť dobrým začiatkom."
       primaryCta="Dohodnúť si konzultáciu"

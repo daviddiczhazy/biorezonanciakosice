@@ -47,31 +47,31 @@ const benefits = [
 const faqItems = [
   {
     q: "Čo je biorezonancia?",
-    a: "Biorezonancia je neinvazívna metóda, ktorá je opisovaná ako práca s frekvenčnými vzormi organizmu a s individuálnym, celostným prístupom. Je prezentovaná ako doplnkový prístup, ktorý sa snaží podporiť prirodzenú rovnováhu organizmu.",
+    a: "Ide o neinvazívnu diagnostickú a terapeutickú metódu. V praxi pracujeme s biorezonančným prístrojom Bicom Optima 2. generácie — bez invázie, bezbolestne a bez použitia chemických liekov. Prístup kombinuje modernú techniku s prvkami tradičnej čínskej medicíny a smeruje k harmonizácii organizmu a podpore jeho prirodzených regulačných procesov.",
   },
   {
-    q: "Na akom princípe funguje?",
-    a: "Referenčné materiály ju opisujú cez biofyzikálny princíp a prácu s elektromagnetickými frekvenčnými vzormi. Biorezonančný prístroj sleduje reakciu organizmu na určité frekvenčné podnety a podľa toho sa nastavuje ďalší postup.",
+    q: "Ako biorezonančný prístroj pracuje (v skratke)?",
+    a: "Vychádza sa z predstavy, že bunky v organizme spolu komunikujú cez elektromagnetické vlnenie. Prístroj vie tieto signály zachytiť (napr. cez elektródy a testovacie látky), spracovať a späť do tela odovzdať upravený „terapeutický signál“. Presný postup sa vždy individuálne nastavuje — viac o princípe nájdete na stránke Informácie.",
   },
   {
     q: "Ako prebieha prvá návšteva?",
-    a: "Prvá návšteva zvyčajne zahŕňa úvodný rozhovor, vysvetlenie priebehu, samotné sedenie a následné odporúčanie ďalšieho postupu. Dôležitou súčasťou je priestor na otázky a pokojné vysvetlenie celej metódy.",
+    a: "Zvyčajne začíname rozhovorom o vašich zdravotných ťažkostiach a súvislostiach (vrátane infekcií, operácií či stavu chrupu). Potom nasleduje práca s prístrojom podľa zvoleného postupu. Často ide aj o odblokovanie stresu, prácu s blokádami, podporu detoxikačných orgánov a testovanie záťaží či oslabených oblastí. Na záver preberáme odporúčania vrátane úpravy stravovania — vždy s priestorom na otázky.",
   },
   {
-    q: "Je stretnutie bolestivé?",
-    a: "Biorezonancia sa bežne opisuje ako neinvazívny prístup. Samotné stretnutie býva vedené pokojne a bez invazívnych zásahov.",
+    q: "Je stretnutie bolestivé alebo invazívne?",
+    a: "Nie. Metóda je neinvazívna a v praxi ju popisujeme ako bezbolestnú, bez chemických liekov. Stretnutie vedieme pokojne a zrozumiteľne.",
   },
   {
     q: "Ako dlho trvá jedno stretnutie?",
-    a: "Dĺžka stretnutia sa môže líšiť podľa konkrétneho postupu a vašej situácie. Presnejšie informácie je najlepšie dohodnúť pri objednaní konzultácie.",
+    a: "Dĺžka závisí od konkrétneho postupu a vašej situácie. Orientačný čas si najlepšie dohodnete pri objednaní konzultácie.",
   },
   {
-    q: "Je tento prístup vhodný pre každého?",
-    a: "Vhodnosť je vždy individuálna. Najlepšie je posúdiť ju osobne podľa vašej konkrétnej situácie, očakávaní a priebehu úvodnej konzultácie.",
+    q: "S akými ťažkosťami môže biorezonancia pomôcť?",
+    a: "Okruh tém je široký — napríklad únava a syndrómy vyčerpania, alergie, psychická záťaž, hormonálne a metabolické súvislosti, podpora imunity, eliminácia záťaží či závislostí, príprava a rekonvalescencia, ale aj doplnková podpora pri náročnejších liečbach. Zoznam tém má iba informatívny význam; či je prístup vhodný práve pre vás, posúdime pri osobnej konzultácii. Podrobnejší prehľad nájdete v sekcii Informácie.",
   },
   {
-    q: "Existujú k biorezonancii aj štúdie?",
-    a: "Na referenčných stránkach sú uvedené viaceré odborné podklady a publikované materiály. Medzi nimi je napríklad aj pilotná štúdia o odvykaní od fajčenia, ktorá uvádza pozitívne výsledky a absenciu klinicky pozorovaných vedľajších účinkov počas sledovania.",
+    q: "Existujú k biorezonancii odborné podklady alebo štúdie?",
+    a: "Áno — okrem popisov metodiky sa v odborných materiáloch spomína napríklad aj pilotná štúdia zameraná na odvykanie od fajčenia s pozitívnymi výsledkami a bez klinicky pozorovaných vedľajších účinkov počas sledovania; treba ju však vnímať ako jeden z podkladov, nie ako jediný definitívny dôkaz. Viac súvislostí uvádzame na stránke Informácie.",
   },
 ];
 </script>
