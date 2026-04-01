@@ -1,12 +1,17 @@
 <script setup lang="ts">
-defineProps<{
-  title: string;
-  subtitle: string;
-  primaryCta: string;
-  primaryTo: string;
-  secondaryCta: string;
-  secondaryTo: string;
-}>();
+withDefaults(
+  defineProps<{
+    title: string;
+    subtitle: string;
+    primaryCta: string;
+    primaryTo: string;
+    secondaryCta: string;
+    secondaryTo: string;
+    /** Väčší podtitulok (napr. stránka Informácie / +2px voči základu). */
+    largerSubtitle?: boolean;
+  }>(),
+  { largerSubtitle: false }
+);
 </script>
 
 <template>
@@ -30,7 +35,10 @@ defineProps<{
               <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
                 {{ title }}
               </h2>
-              <p class="mt-5 text-text/75 leading-relaxed">
+              <p
+                class="mt-5 text-text/75 leading-relaxed"
+                :class="largerSubtitle ? 'text-lg' : 'text-base'"
+              >
                 {{ subtitle }}
               </p>
             </div>
