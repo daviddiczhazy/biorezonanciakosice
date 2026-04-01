@@ -19,7 +19,7 @@
             <div class="mt-5 space-y-4 text-sm text-text/70 leading-relaxed">
               <div>
                 <span class="font-semibold text-text/90">Telefón:</span> +421
-                000 000 000
+                903 848 434
               </div>
               <div>
                 <span class="font-semibold text-text/90">Email:</span>
@@ -27,13 +27,7 @@
               </div>
               <div>
                 <span class="font-semibold text-text/90">Adresa:</span>
-                Žriedlová 18, 040 01 Košice
-              </div>
-              <div>
-                <span class="font-semibold text-text/90"
-                  >Konzultačné hodiny:</span
-                >
-                Po–Pi 9:00–17:00
+                BCM, Moldavská cesta 10/b, Košice 1.poschdie
               </div>
             </div>
 
