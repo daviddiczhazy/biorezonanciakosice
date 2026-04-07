@@ -37,16 +37,20 @@ const navItems = [
           <div class="text-sm font-semibold text-text/90">Kontakt</div>
           <div class="mt-4 flex flex-col gap-3 text-sm text-text/70">
             <div>
-              <span class="font-semibold text-text/90">Telefón:</span> +421 000
-              000 000
+              <span class="font-semibold text-text/90">Meno:</span> Judita
+              Glücková
+            </div>
+            <div>
+              <span class="font-semibold text-text/90">Telefón:</span> +421 903
+              848 434
             </div>
             <div>
               <span class="font-semibold text-text/90">Email:</span>
               info@biorezonancia.sk
             </div>
             <div>
-              <span class="font-semibold text-text/90">Adresa:</span> Ulica 123,
-              000 00
+              <span class="font-semibold text-text/90">Adresa:</span> BCM,
+              Moldavská cesta 10/b, Košice 1.poschdie
             </div>
           </div>
         </div>
