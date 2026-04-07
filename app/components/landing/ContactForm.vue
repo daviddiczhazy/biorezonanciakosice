@@ -8,9 +8,11 @@ const consent = ref(false);
 
 const submitting = ref(false);
 const sent = ref(false);
+const errorMessage = ref<string | null>(null);
 
 const onSubmit = async () => {
   if (sent.value || submitting.value) return;
+  errorMessage.value = null;
 
   if (
     !name.value.trim() ||
@@ -22,9 +24,26 @@ const onSubmit = async () => {
 
   submitting.value = true;
   try {
-    // Skeleton: sem neskôr doplníme reálne odosielanie (server route / e-mail / CRM).
-    await new Promise((r) => setTimeout(r, 900));
+    await $fetch("/api/contact", {
+      method: "POST",
+      body: {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        message: message.value.trim(),
+      },
+    });
     sent.value = true;
+  } catch (e: unknown) {
+    const err = e as {
+      data?: { message?: string };
+      statusMessage?: string;
+      message?: string;
+    };
+    errorMessage.value =
+      (typeof err.data?.message === "string" && err.data.message) ||
+      (typeof err.statusMessage === "string" && err.statusMessage) ||
+      (typeof err.message === "string" && err.message) ||
+      "Odoslanie zlyhalo. Skúste znova alebo nás kontaktujte telefónom.";
   } finally {
     submitting.value = false;
   }
@@ -77,6 +96,14 @@ const onSubmit = async () => {
         Súhlasím so spracovaním údajov na účely odpovede na moju žiadosť (GDPR).
       </span>
     </label>
+
+    <p
+      v-if="errorMessage"
+      class="text-sm text-red-700 bg-red-50 border border-red-200 rounded-2xl px-4 py-3"
+      role="alert"
+    >
+      {{ errorMessage }}
+    </p>
 
     <div class="pt-2 flex flex-col sm:flex-row gap-3 sm:items-center">
       <BaseButton
