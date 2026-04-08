@@ -37,7 +37,7 @@ const navItems = [
           <div class="text-sm font-semibold text-text/90">Kontakt</div>
           <div class="mt-4 flex flex-col gap-3 text-sm text-text/70">
             <div>
-              <span class="font-semibold text-text/90">Meno:</span> Judita
+              <span class="font-semibold text-text/90">Meno:</span> Mgr. Judita
               Glücková
             </div>
             <div>

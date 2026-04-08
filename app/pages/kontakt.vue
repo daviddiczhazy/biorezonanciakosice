@@ -18,8 +18,8 @@ const mapEmbedSrc =
             </div>
             <div class="mt-5 space-y-4 text-sm text-text/70 leading-relaxed">
               <div>
-                <span class="font-semibold text-text/90">Meno:</span> Judita
-                Glücková
+                <span class="font-semibold text-text/90">Meno:</span> Mgr.
+                Judita Glücková
               </div>
               <div>
                 <span class="font-semibold text-text/90">Telefón:</span> +421
