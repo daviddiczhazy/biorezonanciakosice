@@ -5,8 +5,8 @@ withDefaults(
     subtitle: string;
     primaryCta: string;
     primaryTo: string;
-    secondaryCta: string;
-    secondaryTo: string;
+    secondaryCta?: string;
+    secondaryTo?: string;
     /** Väčší podtitulok (napr. stránka Informácie / +2px voči základu). */
     largerSubtitle?: boolean;
   }>(),
@@ -48,6 +48,7 @@ withDefaults(
                 {{ primaryCta }}
               </BaseButton>
               <BaseButton
+                v-if="secondaryCta && secondaryTo"
                 :to="secondaryTo"
                 variant="secondary"
                 size="lg"

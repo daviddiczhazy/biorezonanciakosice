@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     contactFromEmail: "",
   },
   app: {
+    baseURL: "/",
     head: {
       title: "Biorezonancia Košice",
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
