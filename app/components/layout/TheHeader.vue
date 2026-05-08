@@ -7,7 +7,7 @@ type NavItem = { label: string; to: string };
 const navItems: NavItem[] = [
   { label: "Domov", to: "/" },
   { label: "Informácie", to: "/informacie" },
-  { label: "Kontakt", to: "/kontakt" },
+  { label: "Prestaňte fajčiť", to: "/antinikotinova-terapia" },
 ];
 
 const route = useRoute();

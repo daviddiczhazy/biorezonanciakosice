@@ -92,6 +92,11 @@ const faqItems = [
       :items="problemItems"
     />
 
+    <AntiSmokingHeroBanner
+      subtitle="Antinikotínová terapia na dosah."
+      buttonTo="/antinikotinova-terapia"
+    />
+
     <MethodIntroSection
       title="Čo je biorezonancia?"
       :bullets="methodBullets"
